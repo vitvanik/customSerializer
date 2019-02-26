@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package protobuf;
+option java_package = "com.homework.entity";
+
+message SerializeProtoClass {
+    int32 integer = 1;
+    string string = 2;
+    InnerClass innerClass = 3;
+    repeated InnerClass listInnerClasses = 4;
+    repeated string setStrings = 5;
+    map<string, string> map = 6;
+}
+
+message InnerClass {
+    string string = 1;
+    string string1 = 2;
+}
